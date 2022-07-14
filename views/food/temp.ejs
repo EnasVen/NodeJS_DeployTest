@@ -1,0 +1,215 @@
+<h2>原始訂單</h2>
+<table border="1" class="table table-success table-striped">
+    <tr>
+        <th class="table-dark">食品編號</th>
+        <th class="table-dark">食品名稱</th>
+        <th class="table-dark">食品分類</th>
+        <th class="table-dark">購買日期</th>
+        <% for(let i=0;i<emps.length;i++){ %>
+    <tr>
+        <td>
+            <%= emps[i].buylist %>
+        </td>
+        <td>
+            <%= emps[i].fname %>
+        </td>
+        <td>
+            <%= emps[i].catalog %>
+        </td>
+        <td>
+            <%= emps[i].tstamp.substring(0,10) %>
+        </td>
+    </tr>
+    <% } %>
+        </tr>
+</table>
+<h2>變更訂單</h2>
+<a class="btn btn-primary text-white" id="add">新增餐點</a>
+<a><button class="btn btn-primary" id="reform" type="button">確定變更</button></a>
+<a><button class="btn btn-primary" id="delete" type="button">刪除訂單</button></a>
+<!-- <button id="reform" type="button" class="btn btn-primary">變更訂單</button> -->
+<!-- <button id="delete" type="button" class="btn btn-primary">刪除訂單</button> -->
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="table-dark">訂單編號</th>
+            <th class="table-dark">食品編號</th>
+            <th class="table-dark">食品名稱</th>
+            <th class="table-dark">訂購人</th>
+            <th class="table-dark">連絡電話</th>
+            <th class="table-dark">刪除</th>
+        </tr>
+    </thead>
+    <tbody class="tbody">
+        <% for(let i=0;i<emps.length;i++){ %>
+            <tr>
+                <td class="td0">
+                    <%= emps[i].ticketid %>
+                </td>
+                <td class="td1">
+                    <%= emps[i].buylist %>
+                </td>
+                <td>
+                    <%= emps[i].fname %>
+                </td>
+                <td class="td3">
+                    <%= emps[i].cname %>
+                </td>
+                <td class="td4">
+                    <%= emps[i].tel %>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-del"><i class="fa-solid fa-trash-can"></i></button>
+                </td>
+            </tr>
+            <% } %>
+    </tbody>
+</table>
+<!-- <%- include('footer'); -%> -->
+
+    <script>
+
+        $("#add").click(function () {
+
+            let Row = `<tr>
+                      <td class="td0"></td>
+                      <td class="td1"></td>
+                      <td class="td2"><select name="fname" id="fn" class="form-select form-select-lg mb-3">
+                        <option style="display:none;"></option>
+                        <option name="fname" value="PZ001">彩蔬鮮菇(奶素)</option>
+                        <option name="fname" value="PZ002">韓式泡菜燒肉</option>
+                        <option name="fname" value="PZ003">夏威夷</option>
+                        <option name="fname" value="PZ004">鐵板牛柳</option>
+                        <option name="fname" value="PZ005">燻雞絲蘑菇</option>
+                        <option name="fname" value="PZ006">黃金和風雞</option>
+                        <option name="fname" value="PZ007">哈辣墨西哥比薩</option>
+                        <option name="fname" value="PZ008">海鮮</option>
+                        <option name="fname" value="SL001">酪梨水果沙拉</option>
+                        <option name="fname" value="SL002">椰子雞碗豆沙拉</option>
+                        <option name="fname" value="SL003">西瓜卡布里沙拉</option>
+                        <option name="fname" value="SL004">素臘腸蘋果茴香酒醋沙拉</option>
+                        <option name="fname" value="SL005">韓式鮪魚生魚片沙拉</option>
+                        <option name="fname" value="SL006">烤西瓜牛排沙拉</option>
+                        <option name="fname" value="BR001">CRAFT -196精饌果實</option>
+                        <option name="fname" value="BR002">GEKIUMA 激旨沙瓦</option>
+                        <option name="fname" value="BR003">Edelweiss艾德懷斯頂級白啤酒</option>
+                        <option name="fname" value="BR004">沖繩Orion奧利恩生啤酒</option>
+                        <option name="fname" value="BR005">三得利頂級啤酒</option>
+                        <option name="fname" value="BR006">經典海尼根</option>
+                      </select></td>
+                      <td class="td3"></td>
+                      <td class="td4"></td>
+                      <td>
+                          <button type="button" class="btn btn-primary btn-del"><i class="fa-solid fa-trash-can"></i></button>
+                      </td>
+                  </tr>`
+            $(".tbody").append(Row);
+        });
+
+        $("tbody").on("click", ".btn-del", function () {
+            $(this).closest("tr").remove();
+        });
+
+        const ticketid = $('.td0').eq(0).text().trim();
+        const cname = $('.td3').eq(0).text().trim();
+        const tel = $('.td4').eq(0).text().trim();
+
+        $(document).on({
+            // 'focus': function () {
+            //     alert(this.value);
+            // },
+            'blur': function () {
+                // alert(ticketid);
+                $(this).parent().siblings("td").eq(1).text(this.value);
+                // var tmpValue = $(this).parent().parent().siblings().eq(0).children().eq(0).html();
+                $(this).parent().siblings("td").eq(0).text(ticketid);
+                // var tmpValue = $(this).parent().parent().siblings().eq(0).children().eq(3).html();
+                $(this).parent().siblings("td").eq(2).text(cname);
+                // var tmpValue = $(this).parent().parent().siblings().eq(0).children().eq(4).html();
+                $(this).parent().siblings("td").eq(3).text(tel);
+            }
+        }, 'select#fn');
+
+        function reform() {
+
+            var tmpForm, tmpInput;
+            tmpForm = document.createElement('form');
+            tmpForm.setAttribute('action', 'http://localhost:8181/food/updatechk');
+            tmpForm.setAttribute('method', 'post');
+            tmpForm.setAttribute("class", "tmp");
+            tmpForm.setAttribute("id", "tmpForm");
+
+            var tmpTicket = $(".td0").eq(0).text().trim();
+            var tmpCname = $(".td3").eq(0).text().trim();
+            var tmpTel = $(".td4").eq(0).text().trim();
+
+            var tableVal = [];
+            // window.alert(tmpTicket);
+            $('.td1').each(function () {
+                tableVal.push($(this).html().replace(/\n/g, '').trim());
+            });
+
+            // $.post('http://localhost:8181/food/updatechk', { ticketid: ticketid, foodid: tableVal, cname: cname, tel: tel }).done(function(res){
+            //     // // alert(typeof res);
+            //     // alert(typeof res);
+            //     // alert(res);
+            //     // $(html).html(  JSON.stringify(res) );
+            //     res.render("../views/food/updateComplete"  , { emps: '0' });
+            // });
+
+            tmpInput1 = document.createElement('input');
+            tmpInput1.setAttribute('type', 'hidden');
+            tmpInput1.setAttribute('name', 'ticketid');
+            tmpInput1.setAttribute('value', tmpTicket);
+            tmpInput1.setAttribute('class', 'tmp');
+            tmpForm.appendChild(tmpInput1);
+
+            tmpInput2 = document.createElement('input');
+            tmpInput2.setAttribute('type', 'hidden');
+            tmpInput2.setAttribute('name', 'foodid');
+            tmpInput2.setAttribute('value', tableVal);
+            tmpInput2.setAttribute('class', 'tmp');
+            tmpForm.appendChild(tmpInput2);
+
+            tmpInput3 = document.createElement('input');
+            tmpInput3.setAttribute('type', 'hidden');
+            tmpInput3.setAttribute('name', 'cname');
+            tmpInput3.setAttribute('value', tmpCname);
+            tmpInput3.setAttribute('class', 'tmp');
+            tmpForm.appendChild(tmpInput3);
+
+            tmpInput4 = document.createElement('input');
+            tmpInput4.setAttribute('type', 'hidden');
+            tmpInput4.setAttribute('name', 'tel');
+            tmpInput4.setAttribute('value', tmpTel);
+            tmpInput4.setAttribute('class', 'tmp');
+            tmpForm.appendChild(tmpInput4);
+
+            document.getElementById('add').appendChild(tmpForm);
+            tmpForm.submit();
+            $('.tmp').remove();
+        };
+
+        function del() {
+            var tmpForm, tmpInput;
+            tmpForm = document.createElement('form');
+            tmpForm.setAttribute('action', 'http://localhost:8181/food/delete');
+            tmpForm.setAttribute('method', 'get');
+            tmpForm.setAttribute("class", "tmp");
+            tmpForm.setAttribute("id", "tmpForm");
+
+            tmpInput1 = document.createElement('input');
+            tmpInput1.setAttribute('type', 'hidden');
+            tmpInput1.setAttribute('name', 'ticketid');
+            tmpInput1.setAttribute('value', ticketid);
+            tmpInput1.setAttribute('class', 'tmp');
+            tmpForm.appendChild(tmpInput1);
+
+            document.getElementById('add').appendChild(tmpForm);
+            tmpForm.submit();
+            $('.tmp').remove();
+        }
+        $('button#reform').on('click', reform);
+        $('button#delete').on('click', del);
+
+    </script>

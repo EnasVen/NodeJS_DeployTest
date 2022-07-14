@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuerySingleData</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <h2>餐點成分</h2>
+    <% emp=emps[0] %>
+        <table border="1" class="table table-dark table-sm">
+            <tr>
+                <td>餐點代號</td>
+                <td>
+                    <%= emp.foodid %>
+                </td>
+            </tr>
+            <tr>
+                <td>餐點名稱</td>
+                <td>
+                    <%= emp.fname %>
+                </td>
+            </tr>
+            <tr>
+                <td>餐點成分</td>
+                <td>
+                    <%= emp.ingredient %>
+                </td>
+            </tr>
+            <tr>
+                <td>餐點分類</td>
+                <td>
+                    <%= emp.catalog %>
+                </td>
+            </tr>
+        </table>
+        
+</body>
+
+</html>

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Simple House Template</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+	<link href="./public/css/templatemo-style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+		integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+</head>
+<!--
+
+Simple House
+
+https://templatemo.com/tm-539-simple-house
+
+-->
+
+<body>
+	<div class="container">
+		<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="./public/img/simple-house-01.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="./public/img/simple-house-logo.png" alt="Logo" class="tm-site-logo" />
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">Simple House</h1>
+								<h6 class="tm-site-description">restaurant template for personal demo AIEN18 Peter Wang
+								</h6>
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">Home</a></li>
+								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link">About</a></li>
+								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Peter's Midterm Personal Project</h2>
+				<p class="col-12 text-center">Welcome to <b>AIEN18 Peter's</b> demo page. Main theme around this web is
+					restaurant with quality dishes. I used Pizza'Hot and other pics acquired from the Internet to
+					construct three main type of services: <b>Pizza</b> , <b>Salad</b> and <b>Beers</b>. One can use
+					buttons under
+					each entry to give either or dislike. Moreover , the info button can view ingredients making up the
+					dish. </p>
+			</header>
+
+			<div class="tm-paging-links">
+				<nav>
+					<ul>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link active">Pizza</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Salad</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Beers</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Gallery -->
+			<div class="row tm-gallery">
+				<!-- gallery page 1 -->
+				<div id="tm-gallery-page-pizza" class="tm-gallery-page">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/pizza/01.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">彩蔬鮮菇(奶素)</h4>
+								<p class="tm-gallery-description">
+									撒上鮮美的蘑菇與青花菜和紅椒，再加上BBQ素醬，素食口味披薩讓你吃到蔬菜的清爽美味。</p>
+								<p class="tm-gallery-price">$600</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="0">加入品項</button>
+									<button type="submit" formaction="http://localhost:8181/food/query" formmethod="get"
+										class="info" value="PZ001">Detail Info</button>
+								</div>
+							</figcaption>
+
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/pizza/02.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">韓式泡菜燒肉</h4>
+								<p class="tm-gallery-description">道地韓式泡菜，配上軟嫩豬肉，微微酸辣口感讓你大呼過癮！搭配特製餅皮味道更是一絕!</p>
+								<p class="tm-gallery-price">$650</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="1">加入品項</button>
+									<button formaction="http://localhost:8181/food/query" formmethod="get" class="info"
+										value="PZ002">Detail Info</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/pizza/03.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">夏威夷</h4>
+								<p class="tm-gallery-description">經典夏威夷披薩口味，當甜中帶點微酸的鳳梨，遇上風味濃郁的火腿，絕妙味道，越吃越順口。</p>
+								<p class="tm-gallery-price">$550</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="2">加入品項</button>
+									<button formaction="http://localhost:8181/food/query" formmethod="get" class="info"
+										value="PZ003">Detail Info</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/pizza/04.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">鐵板牛柳</h4>
+								<p class="tm-gallery-description">鮮嫩牛肉(紐西蘭牛肉)，還有青椒、洋蔥、蘑菇、再加進特調黑胡椒醬，道地中式美味。</p>
+								<p class="tm-gallery-price">$650</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="3">加入品項</button>
+									<button formaction="http://localhost:8181/food/query" formmethod="get" class="info"
+										value="PZ004">Detail Info</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/pizza/05.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">燻雞絲蘑菇</h4>
+								<p class="tm-gallery-description">特選煙燻雞絲，再加入玉米、蘑菇，烘焙出正點異國風味美食。配上特調的中式醬汁味道更是妙不可言。</p>
+								<p class="tm-gallery-price">$595</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="4">加入品項</button>
+									<button formaction="http://localhost:8181/food/query" formmethod="get" class="info"
+										value="PZ005">Detail Info</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/pizza/06.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">黃金和風雞</h4>
+								<p class="tm-gallery-description">外皮金黃內層鮮嫩的雞肉，搭配爽口鮮脆的黃瓜與香甜的鳳梨，忍不住一口接一口的好滋味！</p>
+								<p class="tm-gallery-price">$690</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="5">加入品項</button>
+									<button formaction="http://localhost:8181/food/query" formmethod="get" class="info"
+										value="PZ006">Detail Info</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/pizza/07.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">哈辣墨西哥比薩</h4>
+								<p class="tm-gallery-description">新鮮洋蔥配上超辣的墨西哥辣椒，及美式臘腸，義大利肉腸，香辣夠味，哈辣族最愛。</p>
+								<p class="tm-gallery-price">$595</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="6">加入品項</button>
+									<button formaction="http://localhost:8181/food/query" formmethod="get" class="info"
+										value="PZ007">Detail Info</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/pizza/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">海鮮</h4>
+								<p class="tm-gallery-description">海鮮披薩使用上選美味鮮蝦、蟹味絲及飽滿豐富的魷魚，一口咬下滿滿鮮美滋味，讚不絕口。</p>
+								<p class="tm-gallery-price">$690</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="7">加入品項</button>
+									<button formaction="http://localhost:8181/food/query" formmethod="get" class="info"
+										value="PZ008">Detail Info</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+				</div> <!-- gallery page 1 -->
+
+				<!-- gallery page 2 -->
+				<div id="tm-gallery-page-salad" class="tm-gallery-page hidden">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/salad/01.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">酪梨水果沙拉</h4>
+								<p class="tm-gallery-description">炎熱的夏天適合來一盤清爽與濃郁的美味。酪梨富含不飽和脂肪酸，對身體也相當好!</p>
+								<p class="tm-gallery-price">$25</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="8">加入品項</button>
+									<button formaction="http://localhost:8181/food/query" formmethod="get" class="info"
+										value="SL001">Detail Info</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/salad/02.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">椰子雞碗豆沙拉</h4>
+								<p class="tm-gallery-description">風味清爽的椰子與雞肉搭配天衣無縫，配上清脆的豌豆，整體味道清甜滋潤，口齒回香!</p>
+								<p class="tm-gallery-price">$30</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="9">加入品項</button>
+									<button formaction="http://localhost:8181/food/query" formmethod="get" class="info"
+										value="SL002">Detail Info</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/salad/03.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">西瓜卡布里沙拉</h4>
+								<p class="tm-gallery-description">一種由厚切的番茄、馬蘇里拉奶酪、香氣撲鼻的羅勒葉和大量的橄欖油组成的拼盤。</p>
+								<p class="tm-gallery-price">$45</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="10">加入品項</button>
+									<button formaction="http://localhost:8181/food/query" formmethod="get" class="info"
+										value="SL003">Detail Info</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/salad/04.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">素臘腸蘋果茴香酒醋沙拉</h4>
+								<p class="tm-gallery-description">素臘腸、蘋果建構不一樣的味覺口感，搭配酒醋的酸甜和茴香的氣息，將沙拉整體昇華。</p>
+								<p class="tm-gallery-price">$50</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="11">加入品項</button>
+									<button formaction="http://localhost:8181/food/query" formmethod="get" class="info"
+										value="SL004">Detail Info</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/salad/05.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">韓式鮪魚生魚片沙拉</h4>
+								<p class="tm-gallery-description">新鮮的鮪魚與生菜、番茄、蘆筍與洋蔥，具有難以置信的味覺衝擊力，相當令人著迷。</p>
+								<p class="tm-gallery-price">$65</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="12">加入品項</button>
+									<button formaction="http://localhost:8181/food/query" formmethod="get" class="info"
+										value="SL005">Detail Info</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/salad/06.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">烤西瓜牛排沙拉</h4>
+								<p class="tm-gallery-description">透過西瓜的水分與天然甘甜，緩解肉類的油膩感並提升牛肉軟嫩的滋味，相當值得嘗試!</p>
+								<p class="tm-gallery-price">$75</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="13">加入品項</button>
+									<button formaction="http://localhost:8181/food/query" formmethod="get" class="info"
+										value="SL006">Detail Info</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+				</div> <!-- gallery page 2 -->
+
+				<!-- gallery page 3 -->
+				<div id="tm-gallery-page-beers" class="tm-gallery-page hidden">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/beer/01.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">CRAFT -196精饌果實</h4>
+								<p class="tm-gallery-description">
+									2022盛夏即將揭開序幕，六月炙熱的天氣裡最過癮的就是暢飲一杯冰涼的調酒飲品。台灣三得利旗下日本銷售冠軍罐裝調酒品牌「-196°C」推出今年全新品牌「CRAFT
+									-196 ℃精饌果實」調酒系列，運用-196℃獨家專利技術，結合經典原料酒與職人獨創調和配方，帶來超越原始果實的精饌美味</p>
+								<p class="tm-gallery-price">$25</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="14">加入品項</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/beer/02.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">GEKIUMA 激旨沙瓦</h4>
+								<p class="tm-gallery-description">來自日本GEKIUMA
+									激旨沙瓦加入台灣RTD即飲調酒市場行列，強調的輕鬆易飲且溫和的飲酒口味。以80s復古City Pop為靈感，發展出瓶身帶有酷酷個性的"Geki-Girl"
+									激旨女孩畫像。
+
+									本月推出季節限定蜜桃風味，以日本水蜜桃原汁加上微氣泡碳酸、3%低酒精度。清爽碳酸和果香風味喝了一起大喊 Gekiuma超級好喝～</p>
+								<p class="tm-gallery-price">$20</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="15">加入品項</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/beer/03.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Edelweiss艾德懷斯頂級白啤酒</h4>
+								<p class="tm-gallery-description">
+									Edelweiss艾德懷斯「小白花」頂級白啤酒採用優質小麥等全天然的成分，加入阿爾卑斯山獨特草本植物（包含鼠尾草、鳶尾根和接骨木花）釀造，風味帶有獨特的花果香氣。在全球廣受女性消費者及優質啤酒飲用者的喜愛。
+								</p>
+								<p class="tm-gallery-price">$30</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="16">加入品項</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/beer/04.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">沖繩Orion奧利恩生啤酒</h4>
+								<p class="tm-gallery-description">
+									沖繩Orion奧利恩生啤酒帶來全新櫻花限定版，喚醒你對沖繩春天的回憶，不僅在包裝以夢幻的櫻花花瓣作為主視覺設計，更將真正的日本櫻花融入啤酒中進行釀製，搭配金黃色澤營造頂級啤酒的奢華感，每一口都能嚐到櫻花的浪漫，增添春季儀式感。
+								</p>
+								<p class="tm-gallery-price">$35</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="17">加入品項</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/beer/05.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">三得利頂級啤酒</h4>
+								<p class="tm-gallery-description">
+									為了傳遞新年吉祥好運，推出金光熠熠的「迎春虎年好運款」，將於一月中旬於全家搶先販售，其他指定通路將陸續於一月下旬推出（限定販售，售完為止）。
+									充滿日式春節意象的瓶身，搭配甘醇濃厚的口感以及馥郁啤酒花香的細緻尾韻，絕對是新年期間送禮、自用兩相宜的質感首選。</p>
+								<p class="tm-gallery-price">$40</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="18">加入品項</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="./public/img/beer/06.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">經典海尼根</h4>
+								<p class="tm-gallery-description">
+									「大人的紅包」超可以！經典海尼根「星年繽紛罐」全台上市新年就要衝一波好運氣，全球啤酒領導品牌海尼根每每推出特殊設計包裝都引發粉絲瘋搶收藏，這次亞洲限定經典海尼根的「星年繽紛罐」，罐身鑲綴年味十足的紅包與金幣，為新春招財添好運，去到親友家走春拜年還沒想好伴手禮，不如就帶上幾手海尼根「星年繽紛罐」。
+								</p>
+								<p class="tm-gallery-price">$45</p>
+								<div class="btn-row">
+									<button formaction="" formmethod="post" class="emoji" id="19">加入品項</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+
+				</div> <!-- gallery page 3 -->
+			</div>
+			<div class="tm-section tm-container-inner">
+				<div class="row">
+					<div class="col-md-6">
+						<figure class="tm-description-figure">
+							<img src="./public/img/img-03.jpg" alt="Image" class="img-fluid" />
+						</figure>
+					</div>
+					<!-- <div class="col-md-6">
+						<div class="tm-description-box">
+							<h4 class="tm-gallery-title">Maecenas nulla neque</h4>
+							<p class="tm-mb-45">Redistributing this template as a downloadable ZIP file on any template
+								collection site is strictly prohibited. You will need to <a rel="nofollow"
+									href="https://templatemo.com/contact">talk to us</a> for additional permissions
+								about our templates. Thank you.</p>
+							<a href="about.html" class="tm-btn tm-btn-default tm-right">Read More</a>
+						</div>
+					</div> -->
+					<div class="col-md-6">
+						<div class="tm-description-box">
+							<h4 class="tm-gallery-title">訂購專區</h4>
+							<table id="table2" class="table table-dark table-striped">
+								<tbody id="tbody2">
+									<!-- <th>餐點序號</th>
+									<th>餐點名稱</th>
+									<th>價格</th>
+									<th>數量</th> -->
+								</tbody>
+							</table>
+							<hr>
+							<div>
+								<form class="sd">
+									<input name="cname" type="text" placeholder="訂購者名稱" style="width: 100px;" required>
+									<input name="tel" type="text" placeholder="連絡電話" required>
+									<input name="buylist" type="hidden" id="hidbuyer">
+									<input name="totalprice" id="counter" type="number" style="width: 100px;" readonly required>
+									<button formaction="http://localhost:8181/food/insert"
+										formmethod="post">Purchase</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<figure class="tm-description-figure">
+							<img src="./public/img/img-02.jpg" alt="Image" class="img-fluid" />
+						</figure>
+					</div>
+					<div class="col-md-6">
+						<div class="tm-description-box">
+							<h4 class="tm-gallery-title">查詢專區</h4>
+							<form>
+								<input name="ticketid" type="text" placeholder="請輸入訂單號碼" required>
+								
+								<button formaction="http://localhost:8181/food/update"
+										formmethod="post">Find</button>
+								<button type="reset">Reset</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2022 Simple House(低調小屋)
+
+				| Design: <a rel="nofollow" href="https://templatemo.com">確診的兆慶同學 (啥啊</a></p>
+		</footer>
+	</div>
+	<script src="./public/js/jquery.min.js"></script>
+	<script src="./public/js/parallax.min.js"></script>
+	<script>
+
+		// jQuery
+		$(document).ready(function () {
+			// Handle click on paging links
+			$('.tm-paging-link').click(function (e) {
+				e.preventDefault();
+
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+
+		// JS
+		var shopping_list =
+			[["PZ001", "彩蔬鮮菇(奶素)", 600],
+			["PZ002", "韓式泡菜燒肉", 650],
+			["PZ003", "夏威夷", 550],
+			["PZ004", "鐵板牛柳", 650],
+			["PZ005", "燻雞絲蘑菇", 595],
+			["PZ006", "黃金和風雞", 690],
+			["PZ007", "哈辣墨西哥比薩", 595],
+			["PZ008", "海鮮", 690],
+			["SL001", "酪梨水果沙拉", 25],
+			["SL002", "椰子雞碗豆沙拉", 30],
+			["SL003", "西瓜卡布里沙拉", 45],
+			["SL004", "素臘腸蘋果茴香酒醋沙拉", 50],
+			["SL005", "韓式鮪魚生魚片沙拉", 65],
+			["SL006", "烤西瓜牛排沙拉", 75],
+			["BR001", "CRAFT -196精饌果實", 25],
+			["BR002", "GEKIUMA 激旨沙瓦", 20],
+			["BR003", "Edelweiss艾德懷斯頂級白啤酒", 30],
+			["BR004", "沖繩Orion奧利恩生啤酒", 35],
+			["BR005", "三得利頂級啤酒", 40],
+			["BR006", "經典海尼根", 45]
+			]
+		subtotal = 0;
+		shoplist=[];
+		function addItems() {
+			var idx = parseInt(this.id);
+			window.alert(`您已將 ${shopping_list[idx][1]} 加入購物車!`)
+			var theTbody = document.getElementById("tbody2");
+
+			var row = document.createElement("tr");
+			var cellID = document.createElement("td");
+			var txtID = document.createTextNode(shopping_list[idx][0]);
+			cellID.appendChild(txtID);
+
+			var cellName = document.createElement("td");
+			var txtName = document.createTextNode(shopping_list[idx][1]);
+			cellName.appendChild(txtName);
+
+			var cellPrice = document.createElement("td");
+			var txtPrice = document.createTextNode(shopping_list[idx][2]);
+			cellPrice.appendChild(txtPrice);
+
+			shoplist.push(shopping_list[idx][0]);
+
+			var cellQtyTD = document.createElement("td");
+			var cellQty = document.createElement("input");
+			cellQty.setAttribute("type", "text");
+			cellQty.setAttribute("maxlength", 2);
+			cellQty.setAttribute("size", 2);
+			// cellQty.setAttribute("class", "qtyInput");
+			let qty = 1;
+			cellQty.setAttribute("value", qty);
+			cellQtyTD.appendChild(cellQty);
+
+			var cellCancel = document.createElement("button");
+			var txtCancel = document.createTextNode('Cancel');
+			cellCancel.appendChild(txtCancel);
+			cellCancel.setAttribute("class", "cancel-btn");
+			cellCancel.setAttribute("value", shopping_list[idx][2]);
+
+			subtotal += parseInt(txtPrice.nodeValue) * parseInt( cellQty.value ) ;
+			$('#hidbuyer').prop("value", shoplist);
+
+			row.appendChild(cellID);
+			row.appendChild(cellName);
+			row.appendChild(cellPrice);
+			row.appendChild(cellQtyTD);
+			row.appendChild(cellCancel);
+
+			theTbody.appendChild(row);
+			// document.getElementById("counter").setAttribute("value", subtotal);
+			$('#counter').prop("value", subtotal);
+			// console.log(subtotal);
+			console.log(shoplist);
+		};
+
+		// jQ
+		$('button.emoji').on('click', addItems);
+		$('#table2').on("click", ".cancel-btn", function () {
+			// $(this).parent().parent().remove();
+			// $(this).parents('tr').remove();  
+			subtotal -= parseInt($(this).attr("value"));
+			// console.log(subtotal);
+			var cancelItem = $(this).siblings().eq(0).html();
+			shoplist = shoplist.filter(v => v != cancelItem);
+			console.log(shoplist);
+
+			$('#hidbuyer').prop("value", shoplist);
+			$('#counter').prop("value", subtotal);
+			$(this).closest("tr").remove();
+
+		});
+		function flamboyant() {
+			var tmpForm, tmpInput;
+			tmpForm = document.createElement('form');
+			tmpForm.setAttribute('action', 'http://localhost:8181/food/query');
+			tmpForm.setAttribute('method', 'get');
+			tmpForm.setAttribute("class", "tmp");
+			tmpForm.setAttribute("id", "tmpForm");
+
+			tmpInput = document.createElement('input');
+			tmpInput.setAttribute('type', 'hidden');
+			tmpInput.setAttribute('name', 'foodid');
+			tmpInput.setAttribute('value', $(this).attr("value"));
+			tmpInput.setAttribute('class', 'tmp');
+
+			tmpForm.appendChild(tmpInput);
+			document.getElementById('tbody2').appendChild(tmpForm);
+			tmpForm.submit();
+			$('.tmp').remove();
+		};
+		$('button.info').on('click', flamboyant);
+
+		// $(".qtyInput").focusout( function(){
+		// 	var priceAry = $(".cancel-btn").attr("value");
+		// 	console.log(priceAry);
+		// } )
+	</script>
+</body>
+
+</html>

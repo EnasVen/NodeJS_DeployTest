@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂單查詢</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <h2>員工資料</h2>
+    <table border="1" class="table">
+        <tr>
+            <th class="table-dark">員工編號</th>
+            <th class="table-dark">姓名</th>
+            <th class="table-dark">到期日</th>
+            <th class="table-dark">薪資</th>
+            <th class="table-dark">部門代號</th>
+            <th class="table-dark">職稱</th>
+            <% for(let i=0;i<emps.length;i++){ %>
+        <tr>
+            <td>
+                <%= emps[i].empno %>
+            </td>
+            <td>
+                <%= emps[i].ename %>
+            </td>
+            <td>
+                <%= emps[i].hiredate.substring(0,10) %>
+            </td>
+            <td>
+                <%= emps[i].salary %>
+            </td>
+            <td>
+                <%= emps[i].deptno %>
+            </td>
+            <td>
+                <%= emps[i].title %>
+            </td>
+        </tr>
+        <% } %>
+            </tr>
+    </table>
+    
+</body>
+
+</html>
