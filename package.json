@@ -1,4 +1,14 @@
 {
+  "name": "PizzaHot",
+  "version": "1.0.0",
+  "description": "Student's Academic Interim Report for ispan",
+  "main": "app.js",
+  "scripts": {
+      "start": "node app.js",
+      "dev": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "ejs": "^3.1.8",
