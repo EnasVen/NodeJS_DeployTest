@@ -1,11 +1,11 @@
 {
-  "name": "PizzaHot",
+  "name": "enasven",
   "version": "1.0.0",
   "description": "Student's Academic Interim Report for ispan",
   "main": "app.js",
   "scripts": {
-      "start": "node app.js",
-      "dev": "nodemon app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
