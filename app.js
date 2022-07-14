@@ -4,6 +4,8 @@ const app = express();
 
 // Establishing the port
 const PORT = process.env.PORT || 8181;
+app.listen(PORT, console.log(
+    `Server started on port ${PORT}`));
 
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
