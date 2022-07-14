@@ -3,7 +3,7 @@ const app = express();
 // app.listen(8181);
 
 // Establishing the port
-const PORT = process.env.PORT ||8181;
+const PORT = process.env.PORT || 8181;
 
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
@@ -19,4 +19,4 @@ app.use(session({
 var foodrouter = require('./router/foodrouter');
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
-app.use('/food', foodrouter);
+app.use('https://enasven.herokuapp.com/food', foodrouter);
