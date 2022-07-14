@@ -4,6 +4,8 @@
   "description": "Student's Academic Interim Report for ispan",
   "main": "app.js",
   "scripts": {
+    "build": "npm run build",
+    "install": "npm install",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
