@@ -25,5 +25,5 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/food', foodrouter);
 
 app.get('/', (req, res) => {
-    res.sendFile('./index.html');
+    res.sendFile('index.html');
 });
