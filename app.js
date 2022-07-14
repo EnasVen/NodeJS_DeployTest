@@ -24,11 +24,6 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 app.use('/food', foodrouter);
 
-// app.get('/', (req, res) => {
-
-//     // Sending the response
-//     res.send('<<a href="https://enasven.herokuapp.com/index.html">https://enasven.herokuapp.com/index.html</a>')
-
-//     // Ending the response
-//     res.end()
-// })
+app.get('*', (req, res) => {
+    res.sendFile('./index.html');
+});
