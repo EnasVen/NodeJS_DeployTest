@@ -3,6 +3,7 @@ const app = express();
 // app.listen(8181);
 
 // Establishing the port
+// const dotenv = require('dotenv').config()
 const PORT = process.env.PORT || 8181;
 app.listen(PORT, console.log(
     `Server started on port ${PORT}`));
