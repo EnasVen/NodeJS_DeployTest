@@ -27,3 +27,31 @@ app.use('/food', foodrouter);
 app.get('/', (req, res) => {
     res.sendFile('index.html');
 });
+
+
+var mysql = require('mysql');
+var mysql_config = {
+    host: 'us-cdbr-east-06.cleardb.net',
+    user: 'ba457097dc58b9',
+    password: 'd720c7af',
+    database: 'heroku_f6720d51623cf1f'
+};
+
+
+function disconnect_handler() {
+   let conn = mysql.createConnection(mysql_config);
+    conn.connect(err => {
+        (err) && setTimeout('disconnect_handler()', 2000);
+    });
+
+    conn.on('error', err => {
+        if (err.code === 'PROTOCOL_CONNECTION_LOST') {
+            // db error 重新連線
+            disconnect_handler();
+        } else {
+            throw err;
+        }
+    });
+    exports.conn = conn;
+}
+disconnect_handler();
