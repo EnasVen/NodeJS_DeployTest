@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 8181 || 8000 || 5000 || 5050 || 5500;
 app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
 
-const session = require('cookie-session');
+const session = require('express-session');
 const cookieParser = require('cookie-parser');
 app.use(express.static('./public'));
 app.use(cookieParser());
