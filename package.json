@@ -1,7 +1,7 @@
 {
   "name": "enasven",
   "version": "1.0.0",
-  "description": "Student's Academic Interim Report for ispan",
+  "description": "PizzaHot",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
