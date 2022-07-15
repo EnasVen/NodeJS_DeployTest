@@ -14,8 +14,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
     <link href="./public/css/all.min.css" rel="stylesheet" />
     <link href="./public/css/templatemo-style.css" rel="stylesheet" />
-    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
     <style>
         * {
             margin: 5px;
@@ -54,6 +52,7 @@
 <a><button class="btn btn-primary" id="delete" type="button">刪除訂單</button></a>
 <!-- <button id="reform" type="button" class="btn btn-primary">變更訂單</button> -->
 <!-- <button id="delete" type="button" class="btn btn-primary">刪除訂單</button> -->
+
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -91,9 +90,9 @@
     </tbody>
 </table>
 <!-- <%- include('footer'); -%> -->
-
+<script src="http://code.jquery.com/jquery-3.6.0.min.js"></script> 
     <script>
-
+           
         $("#add").click(function () {
 
             let Row = `<tr>
