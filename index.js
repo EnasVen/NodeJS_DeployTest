@@ -23,9 +23,9 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 app.use('/food', foodrouter);
 
-// app.get('/', (req, res) => {
-//     res.sendFile('./index.html');
-// });
+app.get('/', (req, res) => {
+    res.sendFile('./index.html');
+});
 
 
 var mysql = require('mysql');
