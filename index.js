@@ -5,8 +5,7 @@ const app = express();
 // Establishing the port
 // const dotenv = require('dotenv').config()
 const PORT = process.env.PORT || 8181 || 8000 || 5000 || 5050 || 5500;
-app.listen(PORT, console.log(
-    `Server started on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
 
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
@@ -24,9 +23,9 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 app.use('/food', foodrouter);
 
-app.get('/', (req, res) => {
-    res.sendFile('./index.html');
-});
+// app.get('/', (req, res) => {
+//     res.sendFile('./index.html');
+// });
 
 
 var mysql = require('mysql');
