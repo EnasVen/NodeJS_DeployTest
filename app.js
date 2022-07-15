@@ -13,7 +13,7 @@ const cookieParser = require('cookie-parser');
 app.use(express.static('./public'));
 app.use(cookieParser());
 app.use(session({
-    secret: '34SDgsdgspxxxxxxxdfsG',
+    secret: 'user',
     name: 'user',
     saveUninitialized: false,
     resave: true
